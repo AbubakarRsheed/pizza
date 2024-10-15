@@ -1,0 +1,201 @@
+.ourteamheadings {
+    font-family: Poppins, sans-serif;
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 80px;
+    text-align: center;
+    margin-bottom: 30px;
+    margin-top: 20px;
+    color: white;
+}
+
+/* Base container for larger screens */
+.ourteam-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;
+    margin: 0 auto;
+    max-width: 1800px; /* Adjusted for larger screens */
+}
+
+/* Base card styling */
+.ourteam-card {
+    background: transparent;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 30%; /* 3 cards per row */
+    margin-bottom: 20px;
+    padding: 15px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.ourteam-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.ourteam-card h3 {
+    font-family: Poppins, sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 32px;
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    color: white;
+}
+
+.ourteam-card p {
+    font-family: Open Sans, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px;
+    color: white;
+    letter-spacing: 0.25px;
+    text-align: center;
+}
+
+/* Hover effect */
+.ourteam-card:hover {
+    transform: scale(1.05);
+}
+
+/* Responsive for 4K Screens (3840px and above) */
+@media screen and (min-width: 2560px) {
+    .ourteam-container {
+        max-width: 2200px; /* Increased width for 4K screens */
+    }
+
+    .ourteamheadings {
+        font-size: 72px;
+        line-height: 90px;
+    }
+
+    .ourteam-card h3 {
+        font-size: 28px;
+    }
+
+    .ourteam-card p {
+        font-size: 16px;
+    }
+}
+
+/* For large desktops (1440px to 2560px) */
+@media screen and (min-width: 1440px) and (max-width: 2560px) {
+    .ourteam-container {
+        max-width: 1600px;
+    }
+
+    .ourteamheadings {
+        font-size: 64px;
+        line-height: 80px;
+    }
+
+    .ourteam-card h3 {
+        font-size: 24px;
+    }
+
+    .ourteam-card p {
+        font-size: 14px;
+    }
+}
+
+/* For tablets (1024px to 1440px) */
+@media screen and (max-width: 1440px) and (min-width: 1024px) {
+    .ourteam-container {
+        padding: 0 20px;
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+
+    .ourteam-card {
+        width: 30%; /* 2 cards per row */
+    }
+
+    .ourteamheadings {
+        font-size: 48px;
+        line-height: 60px;
+    }
+
+    .ourteam-card h3 {
+        font-size: 22px;
+    }
+
+    .ourteam-card p {
+        font-size: 13px;
+    }
+}
+
+/* For mobile screens (768px to 1024px) */
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+    .ourteam-container {
+        padding: 10px;
+        max-width: 100%;
+    }
+
+    .ourteam-card {
+        width: 25%; /* 1 card per row on small screens */
+    }
+
+    .ourteamheadings {
+        font-size: 36px;
+        line-height: 50px;
+    }
+
+    .ourteam-card h3 {
+        font-size: 20px;
+    }
+
+    .ourteam-card p {
+        font-size: 12px;
+    }
+}
+
+/* For small mobile screens (375px to 768px) */
+@media screen and (max-width: 767px) {
+    .ourteam-container {
+        padding: 10px;
+        margin: 0 10px;
+    }
+
+    .ourteam-card {
+        width: 100%;
+    }
+
+    .ourteamheadings {
+        font-size: 32px;
+        line-height: 40px;
+    }
+
+    .ourteam-card h3 {
+        font-size: 18px;
+    }
+
+    .ourteam-card p {
+        font-size: 11px;
+    }
+}
+
+/* For extra small mobile screens (375px and below) */
+@media screen and (max-width: 375px) {
+    .ourteam-container {
+        padding: 10px;
+        margin: 0 5px;
+    }
+
+    .ourteamheadings {
+        font-size: 28px;
+        line-height: 35px;
+    }
+
+    .ourteam-card h3 {
+        font-size: 16px;
+    }
+
+    .ourteam-card p {
+        font-size: 10px;
+    }
+}

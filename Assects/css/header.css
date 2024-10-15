@@ -1,0 +1,396 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.header {
+    background-color: #111011;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 40px;
+}
+
+/* Left Section Styling */
+.left-section {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    /* Adjusts spacing between items */
+}
+
+.city-selects {
+    background: transparent;
+    color: white;
+    border: none;
+    padding: 5px;
+}
+
+.time {
+    font-size: 1em;
+    color: #F7CC32;
+    /* Color for the time text */
+}
+
+.sample-image {
+    width: 2px;
+    /* Set the width of the line image */
+    height: 24px;
+    /* Adjust height of the line */
+}
+
+.mobile-number {
+    font-size: 1em;
+    color: #f7f8f5;
+    /* Color for mobile number */
+}
+
+/* Right Section Styling */
+.right-section {
+    display: flex;
+    gap: 32px;
+    background-color: #111011;
+    /* Space between the items */
+}
+
+.item-right {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    height: 1px;
+    /* Space between the image and text */
+}
+
+.right-image {
+    width: 24px;
+    /* Set width for the right section images */
+    height: auto;
+}
+
+.right-text {
+    font-size: 1em;
+    color:#FFFFFF;
+    /* Text color */
+    font-weight: bold;
+    /* Optional: Bold text */
+}
+/*Navbar styling start here */
+/* Base styles for the navbar */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+.navbar {
+    background-color: #1a1a1a;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.leftside-navbar{
+    margin-left: 103px;
+}
+.logo {
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+}
+.nav-items {
+    display: flex;
+    gap: 32px;
+    margin-right: 129px;
+}
+.nav-item {
+    color: white;
+    text-decoration: none;
+}
+.nav-item.active {
+    color: #ffd700;
+}
+.nav-item:hover{
+    color: yellow;
+}
+.city-container {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.selectcity {
+    display: inline;
+    flex-direction: row;
+    margin-left: 200px;
+    margin-top: -51px;
+}
+
+.select-city {
+    width: 110px;
+    height: 40px;
+    padding: 5px;
+    font-size: 16px;
+    color: #bbec08;
+    border: none;
+    background: transparent;
+    
+    cursor: pointer;
+}
+.selectcity span{
+    color:#FFFFFF40;
+}
+
+.select-city:disabled {
+    background-color: #f1545440;
+    color: #999;
+    cursor: not-allowed;
+}
+
+/*hero section start here */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #050505;
+}
+
+.containerhero {
+    margin-top: 33px;
+    margin-bottom: 44px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start; /* Align cards to the top */
+}
+
+.left-card {
+    width: 55%; /* Adjust width as needed */
+    background-color: #080808;
+    border-radius: 8px;
+    padding: 20px;
+    margin-left: 120px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.right-card {
+    width: 38%; /* Adjust width as needed */
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    margin-right: 120px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center; /* Center the image */
+    align-items: center; /* Center the image vertically */
+}
+
+.card-title {
+    color: white;
+    font-family: Poppins;
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 80px;
+    text-align: left;
+    width: 500px;
+    
+}
+.orderpizza{
+    width: Fixed (220px)px;
+height: Hug (46px)px;
+padding: 12px 48px 12px 48px;
+gap: 8px;
+border-radius: 10px;
+background-color: #9cf50c;
+opacity: 0px;
+
+}
+.orderpizza2{
+    width: Fixed (220px)px;
+height: Hug (46px)px;
+padding: 12px 48px 12px 48px;
+gap: 8px;
+border: 1px solid white;
+border-radius: 10px;
+background: transparent;
+color: white;
+
+}
+.starshero{
+    margin-top: 20px;
+}
+.fivestart{
+    margin-top: -23px;
+    margin-left: 42px;
+}
+.card-image {
+    width: 100%; /* Make the image responsive */
+    border-radius: 8px; /* Rounded corners for the image */
+    object-fit: cover; /* Maintain aspect ratio */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.tab-section ul {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    justify-content: center;
+    list-style-type: none;
+  background: transparent;
+    padding: 30px 0;
+    gap: 60px;
+ 
+    width: 100%;
+}
+
+.tab-section li {
+    margin: 0 10px;
+}
+
+.tab-section a {
+    text-decoration: none;
+    padding: 10px 25px;
+    color: #333333;
+    transition: background-color 0.3s ease;
+}
+
+.nav-item .nav-link.active {
+    background-color: rgb(84, 11, 219);
+    color: white;
+    border-radius: 5px;
+    padding: 12px 20px;
+}
+
+.nav-tabs {
+    border-bottom: none !important;
+}
+
+.nav-tabs .nav-link, 
+.nav-tabs .nav-link.active {
+    border: none !important;
+    border-bottom: none !important;
+}
+
+.tab-content {
+    padding: 50px;
+}
+
+
+.col-md-4 {
+    flex:  33.333%; /* 3 cards per row */
+    max-width: 33.333%;
+    padding: 15px; /* Adds spacing between columns */
+    box-sizing: border-box;
+}
+
+.card {
+    border: 1px solid #ddd; /* Light border around the card */
+    border-radius: 8px; /* Rounded corners for the card */
+    overflow: hidden; /* Ensure content stays within the card */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add subtle shadow */
+    text-align: center;
+    width: 100%;
+}
+
+.card-img-top {
+    width: 100%; /* Make image fit the card width */
+     
+    height: auto; /* Maintain aspect ratio */
+  
+}
+
+.card-body {
+    padding: 25px;
+    width: 100%;
+}
+
+.card-titles {
+    font-size: 1.25rem;
+    margin-bottom: 10px;
+    color: #333; /* Darker color for the title */
+}
+
+.card-text {
+    font-size: 14px;
+    color: #666; /* Light gray color for the description */
+    margin-bottom: 15px;
+}
+
+.sub-tittles {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    border: 1px solid rgb(236, 234, 229);
+}
+
+.sub-tittles h6 {
+    font-size: 16px;
+    margin: 0;
+    font-weight: bold;
+    padding: 6px;
+    color: #333;
+}
+
+.sub-tittles p {
+    font-size: 14px;
+    margin: 0;
+    color: #666;
+    padding: 3px;
+    margin-right: 4px;
+}
+
+
+/* Existing styles remain the same */
+
+/* Hamburger menu styles */
+.hamburger {
+    display: none; /* Hide hamburger by default */
+    flex-direction: column;
+    cursor: pointer;
+    margin-left: auto; /* Align to the right */
+}
+
+.line {
+    height: 3px;
+    width: 25px;
+    background-color: white; /* Hamburger color */
+    margin: 4px 0; /* Spacing between lines */
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .nav-items {
+        display: none; /* Hide nav items by default on small screens */
+        flex-direction: column; /* Stack vertically */
+        width: 100%; /* Full width */
+        position: absolute; /* Position it absolutely */
+        top: 60px; /* Adjust based on your navbar height */
+        left: 0; /* Align to left */
+        background-color: #333; /* Same background as navbar */
+        z-index: 1000; /* Ensure it's above other elements */
+    }
+
+    .nav-items.show {
+        display: flex; /* Show nav items when the menu is active */
+    }
+
+    .hamburger {
+        display: flex; /* Show hamburger icon on small screens */
+    }
+}
+

@@ -1,0 +1,365 @@
+/* General Styles */
+.tabs-main-content {
+    margin-top: 30px;
+}
+
+/* Column Styles */
+.left-column {
+    padding: 20px;
+    margin-right: 30px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.right-column {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tabs-container {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin-top: 70px;
+    margin-bottom: 30px;
+}
+.tab-content{
+    align-items: center;
+    justify-content: center;
+}
+/* Image Styles */
+.image-grid img {
+    width: 6%;
+    height: auto;
+    border: 0;
+    margin-top: 32px;
+}
+
+.nav-link img {
+    width: 50px;
+    height: 50px;
+}
+
+.nav-item {
+    margin-left: 37px;
+}
+.nav-tabs{
+margin-left: 30px;
+width: 100%;
+border-bottom: none !important;
+}
+/* Heading Styles */
+h1#tabs-main-heading {
+    font-family: Poppins;
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 80px;
+    text-align: left;
+}
+
+/* Button Styles */
+.btn {
+    width: 220px;
+    height: 46px;
+    padding: 12px 48px;
+    border-radius: 10px;
+    background-color: yellow;
+}
+
+.btn2 {
+    width: 220px;
+    height: 46px;
+    padding: 12px 38px;
+    border-radius: 10px;
+    border: 1px solid white;
+    color: white;
+    background-color: #333;
+    margin-left: 12px;
+}
+
+.btn:hover, .btn2:hover {
+    background-color: #0056b3;
+}
+
+/* Image Grid Styles */
+.image-grid {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 4px;
+    margin-top: 50px;
+}
+
+.image-grid.small-images {
+    width: 1px;
+    margin-top: 20px;
+    height: 1px;
+    border-radius: 5px;
+}
+
+.small-image:hover {
+    transform: scale(1.05);
+}
+
+/* Large Image Styles */
+.large-image {
+    max-width: 100%;
+    height: auto;
+    margin-left: 240px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Tab Pane Styles */
+.tab-pane {
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+.sub-tittles {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    padding: 8px;
+    border: 1px solid rgb(184, 182, 182);
+}
+
+.sub-tittles h6 {
+    margin: 0;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.sub-tittles p {
+    margin: 0;
+    font-size: 14px;
+    color: #888;
+}
+
+/* 4K (2560px and above) */
+@media (min-width: 2560px) {
+    h1#tabs-main-heading {
+        font-size: 80px; /* Adjusted font size */
+        line-height: 150px; /* Adjusted line height */
+    }
+    
+    .left-column,
+    .right-column {
+        padding: 20px; /* Set padding to 20px for both columns */
+        margin-bottom: 52px; /* Ensure spacing between columns */
+        width: 100%; /* Set width to 100% for both columns */
+    }
+
+    .btn,
+    .btn2 {
+        width: 310px; /* Adjusted button width */
+        height: 60px; /* Adjusted button height */
+        font-size: 20px; /* Adjusted font size */
+        padding: 16px 60px; /* Adjusted padding */
+    }
+
+    .large-image {
+        margin-left: 600px; /* Maintain margin for large image */
+    }
+
+    .image-grid img {
+        width: 15%; /* Set image width for grid */
+    }
+}
+
+/* 1440px (Large Desktops) */
+@media (max-width: 1440px) {
+    h1#tabs-main-heading {
+        font-size: 56px;
+        line-height: 72px;
+        width: 310px;
+
+    }
+    .left-column,
+    .right-column {
+        padding: 15px;
+        margin-bottom: 22px;
+        margin-bottom: 52px;
+    }
+
+    
+
+    .btn, .btn2 {
+        width: 250px;
+        height: 80px;
+        font-size: 18px;
+        padding: 12px 40px;
+    }
+
+    .large-image {
+        margin-left: 200px;
+    }
+
+    .image-grid img {
+        width: 10%;
+    }
+    .tabs-container{
+        width: 100vh;
+        
+    }
+}
+
+/* 1024px (Tablets and small desktops) */
+@media (max-width: 1024px) {
+    .left-column,
+    .right-column {
+        padding: 15px;
+        margin-bottom: 22px;
+    }
+
+    h1#tabs-main-heading {
+        font-size: 48px;
+        line-height: 60px;
+        width: 312px;
+    }
+
+    .btn, .btn2 {
+        width: 198px;
+        height: 55px;
+        font-size: 16px;
+    }
+
+    .large-image {
+        margin-left: 10px;
+    }
+
+    .image-grid img {
+        width: 8%;
+        margin-bottom: 12px;
+        margin-top: -12px;
+    }
+}
+
+/* 768px (Small screens) */
+@media (max-width: 768px) {
+    h1#tabs-main-heading {
+        font-size: 40px;
+        line-height: 50px;
+        width: 250px;
+    }
+
+    .btn, .btn2 {
+        width: 190px;
+        height: 46px;
+        padding: 10px 30px;
+        font-size: 14px;
+    }
+    
+
+    .large-image {
+        margin-left: 35px;
+    }
+
+    .image-grid img {
+        width: 10%;
+    }
+
+    .tabs-container {
+        flex-direction: column;
+        margin-top: 30px;
+        width: 100vh;
+    }
+}
+
+/* 576px (Extra small screens) */
+@media (max-width: 576px) {
+    h1#tabs-main-heading {
+        font-size: 32px;
+        line-height: 60px;
+        width: 240px;
+    }
+
+    .btn, .btn2 {
+        width: 140px;
+        height: 40px;
+        padding: 8px 20px;
+        font-size: 12px;
+    }
+
+    .large-image {
+        justify-content: center;
+        text-align: center;
+       align-items: center;
+        width: 100vh;
+        margin-right: 45px;
+        
+    }
+
+    .image-grid img {
+        width: 60px;
+    }
+
+    .tabs-container {
+        flex-direction: column;
+    }
+}
+@media (max-width: 425px) {
+    h1#tabs-main-heading {
+        font-size: 30px;
+        line-height: 55px;
+        width: 220px;
+    }
+
+    .btn,
+    .btn2 {
+        width: 130px;
+        height: 35px;
+        padding: 6px 15px;
+        font-size: 11px;
+    }
+
+    .large-image {
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        width: 90%;
+        margin-right: 50px;
+    }
+
+    .image-grid img {
+        width: 50px;
+    }
+
+    .tabs-container {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 375px) {
+    h1#tabs-main-heading {
+        font-size: 28px;
+        line-height: 50px;
+        width: 300px;
+    }
+
+    .btn,
+    .btn2 {
+        width: 120px;
+        height: 30px;
+        padding: 5px 10px;
+        font-size: 10px;
+    }
+
+    .large-image {
+        width: 100%;
+        margin-right: 63px;
+    }
+
+    .image-grid img {
+        width: 40px;
+    }
+
+    .tabs-container {
+        flex-direction: column;
+    }
+}

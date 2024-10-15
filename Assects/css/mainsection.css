@@ -1,0 +1,126 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+.container1 {
+    
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 50px;
+    margin-bottom: 40px;
+}
+
+.left-column,
+.right-column {
+    width: 48%;
+}
+
+/* Responsive for smaller screens */
+@media (max-width: 768px) {
+
+    .left-column,
+    .right-column {
+        width: 100%;
+    }
+}
+
+h1 {
+    margin-bottom: 20px;
+    color: #fcf8f8;
+    width: 504px;
+    height: 240px;
+    gap: 0px;
+    opacity: 0px;
+
+    font-family: Poppins;
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 80px;
+    text-align: left;
+
+}
+
+/* Button Styles */
+.buttons {
+    margin-bottom: 20px;
+
+}
+
+.buttons button {
+    padding: 10px 20px;
+    margin-right: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #F7CC32;
+    color: white;
+    border: none;
+    transition: background-color 0.3s ease;
+    width: Fixed (220px)px;
+    height: Hug (46px)px;
+    padding: 12px 48px 12px 48px;
+    gap: 8px;
+    border-radius: 10px;
+    opacity: 0px;
+
+}
+
+.buttons button:hover {
+    background-color: #555;
+}
+
+/* Image Grid */
+/* Image Grid */
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr); /* 6 images in one row */
+    gap: 0px; /* No gap between images */
+}
+
+.image-grid img {
+    width: 30%; /* Make the images take up 100% of the column width */
+    height: auto;
+    border: 0; /* Remove any borders */
+    margin: 0; /* Remove margin to ensure no space between images */
+}
+
+/* Right Column Large Image */
+.large-image {
+    width: 504px;
+height: 420px;
+gap: 0px;
+opacity: 0px;
+
+    border: 2px solid #333;
+    border-radius: 5px;
+}
+
+/* Responsive Grid for smaller screens */
+@media (max-width: 1024px) {
+    .image-grid {
+        grid-template-columns: repeat(3, 1fr);
+        /* 3 images per row on medium screens */
+    }
+}
+
+@media (max-width: 768px) {
+    .image-grid {
+        grid-template-columns: repeat(2, 1fr);
+        /* 2 images per row on smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .image-grid {
+        grid-template-columns: 1fr;
+        /* 1 image per row on mobile screens */
+    }
+}

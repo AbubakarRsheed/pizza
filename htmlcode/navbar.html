@@ -1,0 +1,1189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Navbar and Footer</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="../Assects/css/navbar.css">
+  <link rel="stylesheet" href="../Assects/css/mainsection.css">
+  <link rel="stylesheet" href="../Assects/css/tabs.css">
+  <link rel="stylesheet" href="../Assects/css/footer.css">
+  
+</head>
+<body>
+  <!-- Header with Navbar -->
+  <header>
+    <nav class="navbar">
+      <div class="logo-select">
+        <img src="../Assects/images/logopizza.png" alt="Logo">
+        <select class="form-select">
+          <option selected>Select city</option>
+          <option value="1">Portgal</option>
+          <option value="2">Indonesia</option>
+          <option value="3">japan</option>
+        </select>
+      </div>
+      
+      <ul class="nav-links" id="navLinks">
+        <li class="active"><a href="#home">Pizza</a></li>
+        <li><a href="#about">Food</a></li>
+        <li><a href="#services">Drinks</a></li>
+        <img src="../Assects/images/Line 1.png" alt="Line">
+        <li><a href="../htmlcode/ourblog.html">FAQ</a></li>
+        <li><a href="../htmlcode/news.html">Reviews</a></li>
+        <li><a href="../htmlcode/ourteam.html">Careers</a></li>
+        <li><a href="../htmlcode/contactpage.html">Contact</a></li>
+      </ul>
+      <div class="hamburger" onclick="toggleMenu()">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+    </nav>
+  </header>
+
+  <div class="container mt-4">
+    <!-- Main Content Heading and Image -->
+    <div class="tabs-main-content">
+        <div class="row">
+            <!-- Left Column -->
+            <div class="col-md-6 left-column">
+                <h1 id="tabs-main-heading">Pizza Round Behind Your Corner</h1>
+                <div class="button-group">
+                    <button class="btn">Order Pizza</button>
+                    <button class="btn2">Make your Own</button>
+                </div>
+                <div class="image-grid">
+                    <img src="../Assects/images/Vector.png" alt="Image 1" class="small-image">
+                    <img src="../Assects/images/Vectorlogo.png" alt="Image 2" class="small-images">
+                    <img src="../Assects/images/Frame 5@3x.png" alt="Image 3" class="small-images">
+                    <img src="../Assects/images/Frame 5@3x.png" alt="Image 4" class="small-images">
+                    <img src="../Assects/images/Frame 5@3x.png" alt="Image 5" class="small-images">
+                </div>
+            </div>
+    
+            <!-- Right Column -->
+            <div class="col-md-6 right-column">
+                <img id="tabs-main-image" src="../Assects/images/1200.jpg" alt="Main Image" class="large-image">
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Tabs -->
+    <ul class="nav nav-tabs tabs-nav-tabs" id="tabs-mainTab" role="tablist">
+      <li class="nav-item" role="presentation">
+        <button class="nav-link active" id="tabs-tab-pizza" data-bs-toggle="tab" data-bs-target="#tabs-pizza-content" type="button" role="tab">Pizza</button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="tabs-tab-pasta" data-bs-toggle="tab" data-bs-target="#tabs-pasta-content" type="button" role="tab">Pasta</button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="tabs-tab-burgers" data-bs-toggle="tab" data-bs-target="#tabs-burgers-content" type="button" role="tab">Burgers</button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="tabs-tab-beer" data-bs-toggle="tab" data-bs-target="#tabs-desserts-content" type="button" role="tab">Beer</button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="tabs-tab-drinks" data-bs-toggle="tab" data-bs-target="#tabs-drinks-content" type="button" role="tab">Drinks</button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="tabs-tab-coffe" data-bs-toggle="tab" data-bs-target="#tabs-salads-content" type="button" role="tab">coffe</button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="tabs-tab-fries" data-bs-toggle="tab" data-bs-target="#tabs-sides-content" type="button" role="tab">Fries</button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="tabs-tab-chicken" data-bs-toggle="tab" data-bs-target="#tabs-soups-content" type="button" role="tab">Chicken</button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="tabs-tab-donuts" data-bs-toggle="tab" data-bs-target="#tabs-sandwiches-content" type="button" role="tab">Donuts</button>
+      </li>
+    </ul>
+
+    <!-- Tab Content -->
+    <div class="tab-content" id="tabs-myTabContent">
+      <!-- Pizza Tab -->
+      <div class="tab-pane fade show active" id="tabs-pizza-content" role="tabpanel">
+        <!-- Pizza Subtabs -->
+        <ul class="nav nav-pills tabs-nav-pills mt-3" id="tabs-pizzaSubTab" role="tablist">
+          <li class="nav-item" role="presentation">
+            <button class="nav-link active" id="tabs-subtab-veg-pizza" data-bs-toggle="pill" data-bs-target="#tabs-veg-pizza-content" type="button" role="tab">Veg Pizza</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="tabs-subtab-nonveg-pizza" data-bs-toggle="pill" data-bs-target="#tabs-nonveg-pizza-content" type="button" role="tab">Non-Veg Pizza</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="tabs-subtab-cheese-pizza" data-bs-toggle="pill" data-bs-target="#tabs-cheese-pizza-content" type="button" role="tab">Cheese Pizza</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="tabs-subtab-pepperoni-pizza" data-bs-toggle="pill" data-bs-target="#tabs-pepperoni-pizza-content" type="button" role="tab">Pepperoni Pizza</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="tabs-subtab-mushroom-pizza" data-bs-toggle="pill" data-bs-target="#tabs-mushroom-pizza-content" type="button" role="tab">Mushroom Pizza</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="tabs-subtab-spicy-pizza" data-bs-toggle="pill" data-bs-target="#tabs-spicy-pizza-content" type="button" role="tab">Spicy Pizza</button>
+          </li>
+        </ul>
+
+        <!-- Subtab Content -->
+        <div class="tab-content mt-3" id="tabs-pizzaSubTabContent">
+          <!-- Veg Pizza Content -->
+          <div class="tab-pane fade show active" id="tabs-veg-pizza-content" role="tabpanel">
+            <div class="row">
+              <div class="col-md-4 mb-3">
+                <div class="card tabs-card" onclick="tabsNavigateTo('orderpizza.html')">
+                  <img src="../Assects/images/pizzaone.jpg" class="card-img-top" alt="Veg Pizza 1">
+                  <div class="card-body">
+                    <h5 class="card-title">Veg Pizza 1</h5>
+                    <h5 class="card-para">Tomato, Mozzarela, Olive, Sezame Oil, Speenach, Salami</h5>
+                    <div class="sub-tittles">
+                      <h6>12 USD</h6>
+                      <p>32 cm pizza</p>
+                    </div>
+                    <div class="sub-tittles">
+                      <h6>16 USD</h6>
+                      <p>45 cm pizza</p>
+                    </div>
+                  </div>
+                 
+                </div>
+              </div>
+              <div class="col-md-4 mb-3">
+                <div class="card tabs-card" onclick="tabsNavigateTo('orderpizza.html')">
+                  <img src="../Assects/images/pizzaone.jpg" class="card-img-top" alt="Veg Pizza 2">
+                  <div class="card-body">
+                    <h5 class="card-title">Veg Pizza 2</h5>
+                    <h5 class="card-para">Tomato, Mozzarela, Olive, Sezame Oil, Speenach, Salami</h5>
+                    <div class="sub-tittles">
+                      <h6>12 USD</h6>
+                      <p>32 cm pizza</p>
+                    </div>
+                    <div class="sub-tittles">
+                      <h6>16 USD</h6>
+                      <p>45 cm pizza</p>
+                    </div>
+                  </div>
+                  
+                </div>
+              </div>
+              <div class="col-md-4 mb-3">
+                <div class="card tabs-card" onclick="tabsNavigateTo('orderpizza.html')">
+                  <img src="../Assects/images/pizzaone.jpg" class="card-img-top" alt="Veg Pizza 3">
+                  <div class="card-body">
+                    <h5 class="card-title">Veg Pizza 3</h5>
+                    <h5 class="card-para">Tomato, Mozzarela, Olive, Sezame Oil, Speenach, Salami</h5>
+                    <div class="sub-tittles">
+                      <h6>12 USD</h6>
+                      <p>32 cm pizza</p>
+                    </div>
+                    <div class="sub-tittles">
+                      <h6>16 USD</h6>
+                      <p>45 cm pizza</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Non-Veg Pizza Content -->
+          <div class="tab-pane fade" id="tabs-nonveg-pizza-content" role="tabpanel">
+            <div class="row">
+              <div class="col-md-4 mb-3">
+                <div class="card tabs-card" onclick="tabsNavigateTo('nonveg-pizza-1.html')">
+                  <img src="../Assects/images/nonvegpizza.jpg" class="card-img-top" alt="Non-Veg Pizza 1">
+                  <div class="card-body">
+                    <h5 class="card-title">Non-Veg Pizza 1</h5>
+                    <h5 class="card-para">Tomato, Mozzarela, Olive, Sezame Oil, Speenach, Salami</h5>
+                    <div class="sub-tittles">
+                      <h6>12 USD</h6>
+                      <p>32 cm pizza</p>
+                    </div>
+                    <div class="sub-tittles">
+                      <h6>16 USD</h6>
+                      <p>45 cm pizza</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 mb-3">
+                <div class="card tabs-card" onclick="tabsNavigateTo('nonveg-pizza-2.html')">
+                  <img src="../Assects/images/nonvegpizza.jpg" class="card-img-top" alt="Non-Veg Pizza 2">
+                  <div class="card-body">
+                    <h5 class="card-title">Non-Veg Pizza 2</h5>
+                    <h5 class="card-para">Tomato, Mozzarela, Olive, Sezame Oil, Speenach, Salami</h5>
+                    <div class="sub-tittles">
+                      <h6>12 USD</h6>
+                      <p>32 cm pizza</p>
+                    </div>
+                    <div class="sub-tittles">
+                      <h6>16 USD</h6>
+                      <p>45 cm pizza</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 mb-3">
+                <div class="card tabs-card" onclick="tabsNavigateTo('nonveg-pizza-3.html')">
+                  <img src="../Assects/images/nonvegpizza.jpg" class="card-img-top" alt="Non-Veg Pizza 3">
+                  <div class="card-body">
+                    <h5 class="card-title">Non-Veg Pizza 3</h5>
+                    <h5 class="card-para">Tomato, Mozzarela, Olive, Sezame Oil, Speenach, Salami</h5>
+                    <div class="sub-tittles">
+                      <h6>12 USD</h6>
+                      <p>32 cm pizza</p>
+                    </div>
+                    <div class="sub-tittles">
+                      <h6>16 USD</h6>
+                      <p>45 cm pizza</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Cheese Pizza Content -->
+          <div class="tab-pane fade" id="tabs-cheese-pizza-content" role="tabpanel">
+            <div class="row">
+              <div class="col-md-4 mb-3">
+                <div class="card tabs-card" onclick="tabsNavigateTo('cheese-pizza-1.html')">
+                  <img src="../Assects/images/cheezpizza.jpg" class="card-img-top" alt="Cheese Pizza 1">
+                  <div class="card-body">
+                    <h5 class="card-title">Cheese Pizza 1</h5>
+                    <h5 class="card-para">Tomato, Mozzarela, Olive, Sezame Oil, Speenach, Salami</h5>
+                    <div class="sub-tittles">
+                      <h6>12 USD</h6>
+                      <p>32 cm pizza</p>
+                    </div>
+                    <div class="sub-tittles">
+                      <h6>16 USD</h6>
+                      <p>45 cm pizza</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 mb-3">
+                <div class="card tabs-card" onclick="tabsNavigateTo('cheese-pizza-2.html')">
+                  <img src="../Assects/images/cheezpizza.jpg" class="card-img-top" alt="Cheese Pizza 2">
+                  <div class="card-body">
+                    <h5 class="card-title">Cheese Pizza 2</h5>
+                    <h5 class="card-para">Tomato, Mozzarela, Olive, Sezame Oil, Speenach, Salami</h5>
+                    <div class="sub-tittles">
+                      <h6>12 USD</h6>
+                      <p>32 cm pizza</p>
+                    </div>
+                    <div class="sub-tittles">
+                      <h6>16 USD</h6>
+                      <p>45 cm pizza</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 mb-3">
+                <div class="card tabs-card" onclick="tabsNavigateTo('cheese-pizza-3.html')">
+                  <img src="../Assects/images/cheezpizza.jpg" class="card-img-top" alt="Cheese Pizza 3">
+                  <div class="card-body">
+                    <h5 class="card-title">Cheese Pizza 3</h5>
+                    <h5 class="card-para">Tomato, Mozzarela, Olive, Sezame Oil, Speenach, Salami</h5>
+                    <div class="sub-tittles">
+                      <h6>12 USD</h6>
+                      <p>32 cm pizza</p>
+                    </div>
+                    <div class="sub-tittles">
+                      <h6>16 USD</h6>
+                      <p>45 cm pizza</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Pepperoni Pizza Content -->
+          <div class="tab-pane fade" id="tabs-pepperoni-pizza-content" role="tabpanel">
+            <div class="row">
+              <div class="col-md-4 mb-3">
+                <div class="card tabs-card" onclick="tabsNavigateTo('pepperoni-pizza-1.html')">
+                  <img src="../Assects/images/pepornipizza.avif" class="card-img-top" alt="Pepperoni Pizza 1">
+                  <div class="card-body">
+                    <h5 class="card-title">Pepperoni Pizza 1</h5>
+                    <h5 class="card-para">Tomato, Mozzarela, Olive, Sezame Oil, Speenach, Salami</h5>
+                    <div class="sub-tittles">
+                      <h6>12 USD</h6>
+                      <p>32 cm pizza</p>
+                    </div>
+                    <div class="sub-tittles">
+                      <h6>16 USD</h6>
+                      <p>45 cm pizza</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 mb-3">
+                <div class="card tabs-card" onclick="tabsNavigateTo('pepperoni-pizza-2.html')">
+                  <img src="../Assects/images/pepornipizza.avif" class="card-img-top" alt="Pepperoni Pizza 2">
+                  <div class="card-body">
+                    <h5 class="card-title">Pepperoni Pizza 2</h5>
+                    <h5 class="card-para">Tomato, Mozzarela, Olive, Sezame Oil, Speenach, Salami</h5>
+                    <div class="sub-tittles">
+                      <h6>12 USD</h6>
+                      <p>32 cm pizza</p>
+                    </div>
+                    <div class="sub-tittles">
+                      <h6>16 USD</h6>
+                      <p>45 cm pizza</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 mb-3">
+                <div class="card tabs-card" onclick="tabsNavigateTo('pepperoni-pizza-3.html')">
+                  <img src="../Assects/images/pepornipizza.avif" class="card-img-top" alt="Pepperoni Pizza 3">
+                  <div class="card-body">
+                    <h5 class="card-title">Pepperoni Pizza 3</h5>
+                    <h5 class="card-para">Tomato, Mozzarela, Olive, Sezame Oil, Speenach, Salami</h5>
+                    <div class="sub-tittles">
+                      <h6>12 USD</h6>
+                      <p>32 cm pizza</p>
+                    </div>
+                    <div class="sub-tittles">
+                      <h6>16 USD</h6>
+                      <p>45 cm pizza</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Mushroom Pizza Content -->
+          <div class="tab-pane fade" id="tabs-mushroom-pizza-content" role="tabpanel">
+            <div class="row">
+              <div class="col-md-4 mb-3">
+                <div class="card tabs-card" onclick="tabsNavigateTo('mushroom-pizza-1.html')">
+                  <img src="../Assects/images/mushroompizza.jpg" class="card-img-top" alt="Mushroom Pizza 1">
+                  <div class="card-body">
+                    <h5 class="card-title">Mushroom Pizza 1</h5>
+                    <h5 class="card-para">Tomato, Mozzarela, Olive, Sezame Oil, Speenach, Salami</h5>
+                    <div class="sub-tittles">
+                      <h6>12 USD</h6>
+                      <p>32 cm pizza</p>
+                    </div>
+                    <div class="sub-tittles">
+                      <h6>16 USD</h6>
+                      <p>45 cm pizza</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 mb-3">
+                <div class="card tabs-card" onclick="tabsNavigateTo('mushroom-pizza-2.html')">
+                  <img src="../Assects/images/mushroompizza.jpg" class="card-img-top" alt="Mushroom Pizza 2">
+                  <div class="card-body">
+                    <h5 class="card-title">Mushroom Pizza 2</h5>
+                    <h5 class="card-para">Tomato, Mozzarela, Olive, Sezame Oil, Speenach, Salami</h5>
+                    <div class="sub-tittles">
+                      <h6>12 USD</h6>
+                      <p>32 cm pizza</p>
+                    </div>
+                    <div class="sub-tittles">
+                      <h6>16 USD</h6>
+                      <p>45 cm pizza</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 mb-3">
+                <div class="card tabs-card" onclick="tabsNavigateTo('mushroom-pizza-3.html')">
+                  <img src="../Assects/images/mushroompizza.jpg" class="card-img-top" alt="Mushroom Pizza 3">
+                  <div class="card-body">
+                    <h5 class="card-title">Mushroom Pizza 3</h5>
+                    <h5 class="card-para">Tomato, Mozzarela, Olive, Sezame Oil, Speenach, Salami</h5>
+                    <div class="sub-tittles">
+                      <h6>12 USD</h6>
+                      <p>32 cm pizza</p>
+                    </div>
+                    <div class="sub-tittles">
+                      <h6>16 USD</h6>
+                      <p>45 cm pizza</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Spicy Pizza Content -->
+          <div class="tab-pane fade" id="tabs-spicy-pizza-content" role="tabpanel">
+            <div class="row">
+              <div class="col-md-4 mb-3">
+                <div class="card tabs-card" onclick="tabsNavigateTo('spicy-pizza-1.html')">
+                  <img src="../Assects/images/spicypizza.avif" class="card-img-top" alt="Spicy Pizza 1">
+                  <div class="card-body">
+                    <h5 class="card-title">Spicy Pizza 1</h5>
+                    <h5 class="card-para">Tomato, Mozzarela, Olive, Sezame Oil, Speenach, Salami</h5>
+                    <div class="sub-tittles">
+                      <h6>12 USD</h6>
+                      <p>32 cm pizza</p>
+                    </div>
+                    <div class="sub-tittles">
+                      <h6>16 USD</h6>
+                      <p>45 cm pizza</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 mb-3">
+                <div class="card tabs-card" onclick="tabsNavigateTo('spicy-pizza-2.html')">
+                  <img src="../Assects/images/spicypizza.avif" class="card-img-top" alt="Spicy Pizza 2">
+                  <div class="card-body">
+                    <h5 class="card-title">Spicy Pizza 2</h5>
+                    <h5 class="card-para">Tomato, Mozzarela, Olive, Sezame Oil, Speenach, Salami</h5>
+                    <div class="sub-tittles">
+                      <h6>12 USD</h6>
+                      <p>32 cm pizza</p>
+                    </div>
+                    <div class="sub-tittles">
+                      <h6>16 USD</h6>
+                      <p>45 cm pizza</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 mb-3">
+                <div class="card tabs-card" onclick="tabsNavigateTo('spicy-pizza-3.html')">
+                  <img src="../Assects/images/spicypizza.avif" class="card-img-top" alt="Spicy Pizza 3">
+                  <div class="card-body">
+                    <h5 class="card-title">Spicy Pizza 3</h5>
+                    <h5 class="card-para">Tomato, Mozzarela, Olive, Sezame Oil, Speenach, Salami</h5>
+                    <div class="sub-tittles">
+                      <h6>12 USD</h6>
+                      <p>32 cm pizza</p>
+                    </div>
+                    <div class="sub-tittles">
+                      <h6>16 USD</h6>
+                      <p>45 cm pizza</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Pasta Tab -->
+      <div class="tab-pane fade" id="tabs-pasta-content" role="tabpanel">
+        <!-- Pasta Subtabs -->
+        <ul class="nav nav-pills tabs-nav-pills mt-3" id="tabs-pastaSubTab" role="tablist">
+          <li class="nav-item" role="presentation">
+            <button class="nav-link active" id="tabs-subtab-alfredo-pasta" data-bs-toggle="pill" data-bs-target="#tabs-alfredo-pasta-content" type="button" role="tab">Alfredo Pasta</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="tabs-subtab-bolognese-pasta" data-bs-toggle="pill" data-bs-target="#tabs-bolognese-pasta-content" type="button" role="tab">Bolognese Pasta</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="tabs-subtab-pesto-pasta" data-bs-toggle="pill" data-bs-target="#tabs-pesto-pasta-content" type="button" role="tab">Pesto Pasta</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="tabs-subtab-vegetable-pasta" data-bs-toggle="pill" data-bs-target="#tabs-vegetable-pasta-content" type="button" role="tab">Vegetable Pasta</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="tabs-subtab-spinach-pasta" data-bs-toggle="pill" data-bs-target="#tabs-spinach-pasta-content" type="button" role="tab">Spinach Pasta</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="tabs-subtab-pasta-salad" data-bs-toggle="pill" data-bs-target="#tabs-pasta-salad-content" type="button" role="tab">Pasta Salad</button>
+          </li>
+        </ul>
+
+        <!-- Subtab Content -->
+        <div class="tab-content mt-3" id="tabs-pastaSubTabContent">
+          <!-- Alfredo Pasta Content -->
+          <div class="tab-pane fade show active" id="tabs-alfredo-pasta-content" role="tabpanel">
+            <div class="row">
+              <div class="col-md-4 mb-3">
+                <div class="card tabs-card" onclick="tabsNavigateTo('alfredo-pasta-1.html')">
+                  <img src="../Assects/images/passta.jpg" class="card-img-top" alt="Alfredo Pasta 1">
+                  <div class="card-body">
+                    <h5 class="card-title">Alfredo Pasta 1</h5>
+                    <h5 class="card-para">Tomato, Mozzarela, Olive, Sezame Oil, Speenach, Salami</h5>
+                    <div class="sub-tittles">
+                      <h6>12 USD</h6>
+                      <p>32 cm pizza</p>
+                    </div>
+                    <div class="sub-tittles">
+                      <h6>16 USD</h6>
+                      <p>45 cm pizza</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 mb-3">
+                <div class="card tabs-card" onclick="tabsNavigateTo('alfredo-pasta-2.html')">
+                  <img src="../Assects/images/passta.jpg" class="card-img-top" alt="Alfredo Pasta 2">
+                  <div class="card-body">
+                    <h5 class="card-title">Alfredo Pasta 2</h5>
+                    <h5 class="card-para">Tomato, Mozzarela, Olive, Sezame Oil, Speenach, Salami</h5>
+                    <div class="sub-tittles">
+                      <h6>12 USD</h6>
+                      <p>32 cm pizza</p>
+                    </div>
+                    <div class="sub-tittles">
+                      <h6>16 USD</h6>
+                      <p>45 cm pizza</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 mb-3">
+                <div class="card tabs-card" onclick="tabsNavigateTo('alfredo-pasta-3.html')">
+                  <img src="../Assects/images/passta.jpg" class="card-img-top" alt="Alfredo Pasta 3">
+                  <div class="card-body">
+                    <h5 class="card-title">Alfredo Pasta 3</h5>
+                    <h5 class="card-para">Tomato, Mozzarela, Olive, Sezame Oil, Speenach, Salami</h5>
+                    <div class="sub-tittles">
+                      <h6>12 USD</h6>
+                      <p>32 cm pizza</p>
+                    </div>
+                    <div class="sub-tittles">
+                      <h6>16 USD</h6>
+                      <p>45 cm pizza</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Bolognese Pasta Content -->
+          <div class="tab-pane fade" id="tabs-bolognese-pasta-content" role="tabpanel">
+            <div class="row">
+              <div class="col-md-4 mb-3">
+                <div class="card tabs-card" onclick="tabsNavigateTo('bolognese-pasta-1.html')">
+                  <img src="../Assects/images/burger.jpg" class="card-img-top" alt="Bolognese Pasta 1">
+                  <div class="card-body">
+                    <h5 class="card-title">Bolognese Pasta 1</h5>
+                    <h5 class="card-para">Tomato, Mozzarela, Olive, Sezame Oil, Speenach, Salami</h5>
+                    <div class="sub-tittles">
+                      <h6>12 USD</h6>
+                      <p>32 cm pizza</p>
+                    </div>
+                    <div class="sub-tittles">
+                      <h6>16 USD</h6>
+                      <p>45 cm pizza</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 mb-3">
+                <div class="card tabs-card" onclick="tabsNavigateTo('bolognese-pasta-2.html')">
+                  <img src="../Assects/images/burger.jpg" class="card-img-top" alt="Bolognese Pasta 2">
+                  <div class="card-body">
+                    <h5 class="card-title">Bolognese Pasta 2</h5>
+                    <h5 class="card-para">Tomato, Mozzarela, Olive, Sezame Oil, Speenach, Salami</h5>
+                    <div class="sub-tittles">
+                      <h6>12 USD</h6>
+                      <p>32 cm pizza</p>
+                    </div>
+                    <div class="sub-tittles">
+                      <h6>16 USD</h6>
+                      <p>45 cm pizza</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 mb-3">
+                <div class="card tabs-card" onclick="tabsNavigateTo('bolognese-pasta-3.html')">
+                  <img src="../Assects/images/burger.jpg" class="card-img-top" alt="Bolognese Pasta 3">
+                  <div class="card-body">
+                    <h5 class="card-title">Bolognese Pasta 3</h5>
+                    <h5 class="card-para">Tomato, Mozzarela, Olive, Sezame Oil, Speenach, Salami</h5>
+                    <div class="sub-tittles">
+                      <h6>12 USD</h6>
+                      <p>32 cm pizza</p>
+                    </div>
+                    <div class="sub-tittles">
+                      <h6>16 USD</h6>
+                      <p>45 cm pizza</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Pesto Pasta Content -->
+          <div class="tab-pane fade" id="tabs-pesto-pasta-content" role="tabpanel">
+            <div class="row">
+              <div class="col-md-4 mb-3">
+                <div class="card tabs-card" onclick="tabsNavigateTo('pesto-pasta-1.html')">
+                  <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Pesto Pasta 1">
+                  <div class="card-body">
+                    <h5 class="card-title">Pesto Pasta 1</h5>
+                    <h5 class="card-para">Tomato, Mozzarela, Olive, Sezame Oil, Speenach, Salami</h5>
+                    <div class="sub-tittles">
+                      <h6>12 USD</h6>
+                      <p>32 cm pizza</p>
+                    </div>
+                    <div class="sub-tittles">
+                      <h6>16 USD</h6>
+                      <p>45 cm pizza</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 mb-3">
+                <div class="card tabs-card" onclick="tabsNavigateTo('pesto-pasta-2.html')">
+                  <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Pesto Pasta 2">
+                  <div class="card-body">
+                    <h5 class="card-title">Pesto Pasta 2</h5>
+                    <h5 class="card-para">Tomato, Mozzarela, Olive, Sezame Oil, Speenach, Salami</h5>
+                    <div class="sub-tittles">
+                      <h6>12 USD</h6>
+                      <p>32 cm pizza</p>
+                    </div>
+                    <div class="sub-tittles">
+                      <h6>16 USD</h6>
+                      <p>45 cm pizza</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 mb-3">
+                <div class="card tabs-card" onclick="tabsNavigateTo('pesto-pasta-3.html')">
+                  <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Pesto Pasta 3">
+                  <div class="card-body">
+                    <h5 class="card-title">Pesto Pasta 3</h5>
+                    <h5 class="card-para">Tomato, Mozzarela, Olive, Sezame Oil, Speenach, Salami</h5>
+                    <div class="sub-tittles">
+                      <h6>12 USD</h6>
+                      <p>32 cm pizza</p>
+                    </div>
+                    <div class="sub-tittles">
+                      <h6>16 USD</h6>
+                      <p>45 cm pizza</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Vegetable Pasta Content -->
+          <div class="tab-pane fade" id="tabs-vegetable-pasta-content" role="tabpanel">
+            <div class="row">
+              <div class="col-md-4 mb-3">
+                <div class="card tabs-card" onclick="tabsNavigateTo('vegetable-pasta-1.html')">
+                  <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Vegetable Pasta 1">
+                  <div class="card-body">
+                    <h5 class="card-title">Vegetable Pasta 1</h5>
+                    <h5 class="card-para">Tomato, Mozzarela, Olive, Sezame Oil, Speenach, Salami</h5>
+                    <div class="sub-tittles">
+                      <h6>12 USD</h6>
+                      <p>32 cm pizza</p>
+                    </div>
+                    <div class="sub-tittles">
+                      <h6>16 USD</h6>
+                      <p>45 cm pizza</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 mb-3">
+                <div class="card tabs-card" onclick="tabsNavigateTo('vegetable-pasta-2.html')">
+                  <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Vegetable Pasta 2">
+                  <div class="card-body">
+                    <h5 class="card-title">Vegetable Pasta 2</h5>
+                    <h5 class="card-para">Tomato, Mozzarela, Olive, Sezame Oil, Speenach, Salami</h5>
+                    <div class="sub-tittles">
+                      <h6>12 USD</h6>
+                      <p>32 cm pizza</p>
+                    </div>
+                    <div class="sub-tittles">
+                      <h6>16 USD</h6>
+                      <p>45 cm pizza</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 mb-3">
+                <div class="card tabs-card" onclick="tabsNavigateTo('vegetable-pasta-3.html')">
+                  <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Vegetable Pasta 3">
+                  <div class="card-body">
+                    <h5 class="card-title">Vegetable Pasta 3</h5>
+                    <h5 class="card-para">Tomato, Mozzarela, Olive, Sezame Oil, Speenach, Salami</h5>
+                    <div class="sub-tittles">
+                      <h6>12 USD</h6>
+                      <p>32 cm pizza</p>
+                    </div>
+                    <div class="sub-tittles">
+                      <h6>16 USD</h6>
+                      <p>45 cm pizza</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Spinach Pasta Content -->
+          <div class="tab-pane fade" id="tabs-spinach-pasta-content" role="tabpanel">
+            <div class="row">
+              <div class="col-md-4 mb-3">
+                <div class="card tabs-card" onclick="tabsNavigateTo('spinach-pasta-1.html')">
+                  <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Spinach Pasta 1">
+                  <div class="card-body">
+                    <h5 class="card-title">Spinach Pasta 1</h5>
+                    <h5 class="card-para">Tomato, Mozzarela, Olive, Sezame Oil, Speenach, Salami</h5>
+                    <div class="sub-tittles">
+                      <h6>12 USD</h6>
+                      <p>32 cm pizza</p>
+                    </div>
+                    <div class="sub-tittles">
+                      <h6>16 USD</h6>
+                      <p>45 cm pizza</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 mb-3">
+                <div class="card tabs-card" onclick="tabsNavigateTo('spinach-pasta-2.html')">
+                  <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Spinach Pasta 2">
+                  <div class="card-body">
+                    <h5 class="card-title">Spinach Pasta 2</h5>
+                    <h5 class="card-para">Tomato, Mozzarela, Olive, Sezame Oil, Speenach, Salami</h5>
+                    <div class="sub-tittles">
+                      <h6>12 USD</h6>
+                      <p>32 cm pizza</p>
+                    </div>
+                    <div class="sub-tittles">
+                      <h6>16 USD</h6>
+                      <p>45 cm pizza</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 mb-3">
+                <div class="card tabs-card" onclick="tabsNavigateTo('spinach-pasta-3.html')">
+                  <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Spinach Pasta 3">
+                  <div class="card-body">
+                    <h5 class="card-title">Spinach Pasta 3</h5>
+                    <h5 class="card-para">Tomato, Mozzarela, Olive, Sezame Oil, Speenach, Salami</h5>
+                    <div class="sub-tittles">
+                      <h6>12 USD</h6>
+                      <p>32 cm pizza</p>
+                    </div>
+                    <div class="sub-tittles">
+                      <h6>16 USD</h6>
+                      <p>45 cm pizza</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Pasta Salad Content -->
+          <div class="tab-pane fade" id="tabs-pasta-salad-content" role="tabpanel">
+            <div class="row">
+              <div class="col-md-4 mb-3">
+                <div class="card tabs-card" onclick="tabsNavigateTo('pasta-salad-1.html')">
+                  <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Pasta Salad 1">
+                  <div class="card-body">
+                    <h5 class="card-title">Pasta Salad 1</h5>
+                    <h5 class="card-para">Tomato, Mozzarela, Olive, Sezame Oil, Speenach, Salami</h5>
+                    <div class="sub-tittles">
+                      <h6>12 USD</h6>
+                      <p>32 cm pizza</p>
+                    </div>
+                    <div class="sub-tittles">
+                      <h6>16 USD</h6>
+                      <p>45 cm pizza</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 mb-3">
+                <div class="card tabs-card" onclick="tabsNavigateTo('pasta-salad-2.html')">
+                  <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Pasta Salad 2">
+                  <div class="card-body">
+                    <h5 class="card-title">Pasta Salad 2</h5>
+                    <h5 class="card-para">Tomato, Mozzarela, Olive, Sezame Oil, Speenach, Salami</h5>
+                    <div class="sub-tittles">
+                      <h6>12 USD</h6>
+                      <p>32 cm pizza</p>
+                    </div>
+                    <div class="sub-tittles">
+                      <h6>16 USD</h6>
+                      <p>45 cm pizza</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 mb-3">
+                <div class="card tabs-card" onclick="tabsNavigateTo('pasta-salad-3.html')">
+                  <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Pasta Salad 3">
+                  <div class="card-body">
+                    <h5 class="card-title">Pasta Salad 3</h5>
+                    <h5 class="card-para">Tomato, Mozzarela, Olive, Sezame Oil, Speenach, Salami</h5>
+                    <div class="sub-tittles">
+                      <h6>12 USD</h6>
+                      <p>32 cm pizza</p>
+                    </div>
+                    <div class="sub-tittles">
+                      <h6>16 USD</h6>
+                      <p>45 cm pizza</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Rice Content -->
+          <div class="tab-pane fade" id="tabs-rice-content" role="tabpanel">
+            <div class="row">
+              <div class="col-md-4 mb-3">
+                <div class="card tabs-card" onclick="tabsNavigateTo('rice-1.html')">
+                  <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Rice 1">
+                  <div class="card-body">
+                    <h5 class="card-title">Rice 1</h5>
+                    <h5 class="card-para">Tomato, Mozzarela, Olive, Sezame Oil, Speenach, Salami</h5>
+                    <div class="sub-tittles">
+                      <h6>12 USD</h6>
+                      <p>32 cm pizza</p>
+                    </div>
+                    <div class="sub-tittles">
+                      <h6>16 USD</h6>
+                      <p>45 cm pizza</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 mb-3">
+                <div class="card tabs-card" onclick="tabsNavigateTo('rice-2.html')">
+                  <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Rice 2">
+                  <div class="card-body">
+                    <h5 class="card-title">Rice 2</h5>
+                    <h5 class="card-para">Tomato, Mozzarela, Olive, Sezame Oil, Speenach, Salami</h5>
+                    <div class="sub-tittles">
+                      <h6>12 USD</h6>
+                      <p>32 cm pizza</p>
+                    </div>
+                    <div class="sub-tittles">
+                      <h6>16 USD</h6>
+                      <p>45 cm pizza</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 mb-3">
+                <div class="card tabs-card" onclick="tabsNavigateTo('rice-3.html')">
+                  <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Rice 3">
+                  <div class="card-body">
+                    <h5 class="card-title">Rice 3</h5>
+                    <h5 class="card-para">Tomato, Mozzarela, Olive, Sezame Oil, Speenach, Salami</h5>
+                    <div class="sub-tittles">
+                      <h6>12 USD</h6>
+                      <p>32 cm pizza</p>
+                    </div>
+                    <div class="sub-tittles">
+                      <h6>16 USD</h6>
+                      <p>45 cm pizza</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Quinoa Content -->
+          <div class="tab-pane fade" id="tabs-quinoa-content" role="tabpanel">
+            <div class="row">
+              <div class="col-md-4 mb-3">
+                <div class="card tabs-card" onclick="tabsNavigateTo('quinoa-1.html')">
+                  <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Quinoa 1">
+                  <div class="card-body">
+                    <h5 class="card-title">Quinoa 1</h5>
+                    <h5 class="card-para">Tomato, Mozzarela, Olive, Sezame Oil, Speenach, Salami</h5>
+                    <div class="sub-tittles">
+                      <h6>12 USD</h6>
+                      <p>32 cm pizza</p>
+                    </div>
+                    <div class="sub-tittles">
+                      <h6>16 USD</h6>
+                      <p>45 cm pizza</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 mb-3">
+                <div class="card tabs-card" onclick="tabsNavigateTo('quinoa-2.html')">
+                  <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Quinoa 2">
+                  <div class="card-body">
+                    <h5 class="card-title">Quinoa 2</h5>
+                    <h5 class="card-para">Tomato, Mozzarela, Olive, Sezame Oil, Speenach, Salami</h5>
+                    <div class="sub-tittles">
+                      <h6>12 USD</h6>
+                      <p>32 cm pizza</p>
+                    </div>
+                    <div class="sub-tittles">
+                      <h6>16 USD</h6>
+                      <p>45 cm pizza</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 mb-3">
+                <div class="card tabs-card" onclick="tabsNavigateTo('quinoa-3.html')">
+                  <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Quinoa 3">
+                  <div class="card-body">
+                    <h5 class="card-title">Quinoa 3</h5>
+                    <h5 class="card-para">Tomato, Mozzarela, Olive, Sezame Oil, Speenach, Salami</h5>
+                    <div class="sub-tittles">
+                      <h6>12 USD</h6>
+                      <p>32 cm pizza</p>
+                    </div>
+                    <div class="sub-tittles">
+                      <h6>16 USD</h6>
+                      <p>45 cm pizza</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Sweet Potato Content -->
+          <div class="tab-pane fade" id="tabs-sweet-potato-content" role="tabpanel">
+            <div class="row">
+              <div class="col-md-4 mb-3">
+                <div class="card tabs-card" onclick="tabsNavigateTo('sweet-potato-1.html')">
+                  <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Sweet Potato 1">
+                  <div class="card-body">
+                    <h5 class="card-title">Sweet Potato 1</h5>
+                    <h5 class="card-para">Tomato, Mozzarela, Olive, Sezame Oil, Speenach, Salami</h5>
+                    <div class="sub-tittles">
+                      <h6>12 USD</h6>
+                      <p>32 cm pizza</p>
+                    </div>
+                    <div class="sub-tittles">
+                      <h6>16 USD</h6>
+                      <p>45 cm pizza</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 mb-3">
+                <div class="card tabs-card" onclick="tabsNavigateTo('sweet-potato-2.html')">
+                  <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Sweet Potato 2">
+                  <div class="card-body">
+                    <h5 class="card-title">Sweet Potato 2</h5>
+                    <h5 class="card-para">Tomato, Mozzarela, Olive, Sezame Oil, Speenach, Salami</h5>
+                    <div class="sub-tittles">
+                      <h6>12 USD</h6>
+                      <p>32 cm pizza</p>
+                    </div>
+                    <div class="sub-tittles">
+                      <h6>16 USD</h6>
+                      <p>45 cm pizza</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 mb-3">
+                <div class="card tabs-card" onclick="tabsNavigateTo('sweet-potato-3.html')">
+                  <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Sweet Potato 3">
+                  <div class="card-body">
+                    <h5 class="card-title">Sweet Potato 3</h5>
+                    <h5 class="card-para">Tomato, Mozzarela, Olive, Sezame Oil, Speenach, Salami</h5>
+                    <div class="sub-tittles">
+                      <h6>12 USD</h6>
+                      <p>32 cm pizza</p>
+                    </div>
+                    <div class="sub-tittles">
+                      <h6>16 USD</h6>
+                      <p>45 cm pizza</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Soup Content -->
+          <div class="tab-pane fade" id="tabs-soup-content" role="tabpanel">
+            <div class="row">
+              <div class="col-md-4 mb-3">
+                <div class="card tabs-card" onclick="tabsNavigateTo('soup-1.html')">
+                  <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Soup 1">
+                  <div class="card-body">
+                    <h5 class="card-title">Soup 1</h5>
+                    <h5 class="card-para">Tomato, Mozzarela, Olive, Sezame Oil, Speenach, Salami</h5>
+                    <div class="sub-tittles">
+                      <h6>12 USD</h6>
+                      <p>32 cm pizza</p>
+                    </div>
+                    <div class="sub-tittles">
+                      <h6>16 USD</h6>
+                      <p>45 cm pizza</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 mb-3">
+                <div class="card tabs-card" onclick="tabsNavigateTo('soup-2.html')">
+                  <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Soup 2">
+                  <div class="card-body">
+                    <h5 class="card-title">Soup 2</h5>
+                    <h5 class="card-para">Tomato, Mozzarela, Olive, Sezame Oil, Speenach, Salami</h5>
+                    <div class="sub-tittles">
+                      <h6>12 USD</h6>
+                      <p>32 cm pizza</p>
+                    </div>
+                    <div class="sub-tittles">
+                      <h6>16 USD</h6>
+                      <p>45 cm pizza</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 mb-3">
+                <div class="card tabs-card" onclick="tabsNavigateTo('soup-3.html')">
+                  <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Soup 3">
+                  <div class="card-body">
+                    <h5 class="card-title">Soup 3</h5>
+                    <h5 class="card-para">Tomato, Mozzarela, Olive, Sezame Oil, Speenach, Salami</h5>
+                    <div class="sub-tittles">
+                      <h6>12 USD</h6>
+                      <p>32 cm pizza</p>
+                    </div>
+                    <div class="sub-tittles">
+                      <h6>16 USD</h6>
+                      <p>45 cm pizza</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Salad Content -->
+          <div class="tab-pane fade" id="tabs-salad-content" role="tabpanel">
+            <div class="row">
+              <div class="col-md-4 mb-3">
+                <div class="card tabs-card" onclick="tabsNavigateTo('salad-1.html')">
+                  <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Salad 1">
+                  <div class="card-body">
+                    <h5 class="card-title">Salad 1</h5>
+                    <h5 class="card-para">Tomato, Mozzarela, Olive, Sezame Oil, Speenach, Salami</h5>
+                    <div class="sub-tittles">
+                      <h6>12 USD</h6>
+                      <p>32 cm pizza</p>
+                    </div>
+                    <div class="sub-tittles">
+                      <h6>16 USD</h6>
+                      <p>45 cm pizza</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 mb-3">
+                <div class="card tabs-card" onclick="tabsNavigateTo('salad-2.html')">
+                  <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Salad 2">
+                  <div class="card-body">
+                    <h5 class="card-title">Salad 2</h5>
+                    <h5 class="card-para">Tomato, Mozzarela, Olive, Sezame Oil, Speenach, Salami</h5>
+                    <div class="sub-tittles">
+                      <h6>12 USD</h6>
+                      <p>32 cm pizza</p>
+                    </div>
+                    <div class="sub-tittles">
+                      <h6>16 USD</h6>
+                      <p>45 cm pizza</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 mb-3">
+                <div class="card tabs-card" onclick="tabsNavigateTo('salad-3.html')">
+                  <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Salad 3">
+                  <div class="card-body">
+                    <h5 class="card-title">Salad 3</h5>
+                    <h5 class="card-para">Tomato, Mozzarela, Olive, Sezame Oil, Speenach, Salami</h5>
+                    <div class="sub-tittles">
+                      <h6>12 USD</h6>
+                      <p>32 cm pizza</p>
+                    </div>
+                    <div class="sub-tittles">
+                      <h6>16 USD</h6>
+                      <p>45 cm pizza</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <!--footer start here -->
+<footer class="footer">
+  <div class="container">
+      <div class="footer-content1">
+          <div class="footer-section">
+              <h3>Product</h3>
+              <ul>
+                  <li><a href="#">Pizza</a></li>
+                  <li><a href="#">Burger</a></li>
+                  <li><a href="#">Beer</a></li>
+                  <li><a href="#">Drinks</a></li>
+                  <li><a href="#">Coffee</a></li>
+                  <li><a href="#">Donuts</a></li>
+                  <li><a href="#">Fries</a></li>
+                  <li><a href="#">Chicken</a></li>
+                  <li><a href="#">Pasta</a></li>
+              </ul>
+          </div>
+          <div class="footer-section">
+              <h3>Web</h3>
+              <ul>
+                  <li><a href="#">About</a></li>
+                  <li><a href="../htmlcode/ourteam.html">Team</a></li>
+                  <li><a href="../htmlcode/ourblog.html">News</a></li>
+                  <li><a href="#">Careers</a></li>
+                  <li><a href="./contactpage.html">Contact</a></li>
+                  <li><a href="#">Reviews</a></li>
+                  <li><a href="#">Sitemap</a></li>
+              </ul>
+              <div class="footer-section">
+                  <h3>Security</h3>
+                  <ul>
+                      <li><a href="#">Privacy Policy</a></li>
+                      <li><a href="#">Cookie Policy</a></li>
+                      <li><a href="#">Terms of Service</a></li>
+                  </ul>
+              </div>
+          </div>
+
+         
+          <div class="footer-section">
+              <h3>Contact</h3>
+              <p> <img src="../Assects/images/ic-contact-mobile.png" alt=""> +420 733 633 193</p>
+              <p>Opened daily 10:00 - 23:00</p>
+              <p>
+                 <img src="../Assects/images/ic-contact-mail.png" alt=""> hi@company.com</p>
+              <p>Avg. response time 6 hours</p>
+              <h3>Social Media</h3>
+              <div class="social-icon"><img src="../Assects/images/footericons/ic-social-media-facebook.png" alt="Facebook"> Facebook</div>
+              <p class="joinourteam">1500+ followers</p>
+              <div class="social-icon"><img src="../Assects/images/footericons/ic-social-media-messanger.png" alt="Messanger"> Messanger</div>
+              <p class="joinourteam">Feel free to chat</p>
+              <div class="social-icon"><img src="../Assects/images/footericons/ic-social-media-instagram.png" alt="Instagram"> Instagram</div>
+              <p class="joinourteam">Join our feed</p>
+          </div>
+      </div>
+      <div class="copyright1">
+          ©2022 company.com
+      </div>
+  </div>
+</footer>
+  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  <script src="../javascript/humburger.js"></script>
+  <script src="../javascript/clickedbuttons.js"></script>
+  <script src="../javascript/tabs.js"></script>
+</body>
+</html>

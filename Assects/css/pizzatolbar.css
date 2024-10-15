@@ -1,0 +1,252 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #111;
+    color: #fff;
+}
+
+header {
+    background-color: #000;
+    padding: 20px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo a {
+    color: #fff;
+    font-size: 24px;
+    text-decoration: none;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.nav-buttons a {
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border: 1px solid #fff;
+}
+
+.register-btn {
+    margin-right: 10px;
+}
+
+.hero-section {
+    background-color: #222;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.hero-content h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.hero-buttons a {
+    margin-right: 10px;
+    padding: 10px 20px;
+    background-color: #f7b500;
+    text-decoration: none;
+    color: #000;
+    border-radius: 5px;
+}
+
+.trustpilot-rating {
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+.categories {
+    background-color: #333;
+    padding: 20px;
+    text-align: center;
+}
+
+.categories ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.categories a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-bottom: 2px solid transparent;
+}
+
+.categories a:hover {
+    border-bottom: 2px solid #f7b500;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 50px;
+    background-color: #111;
+}
+
+.product-card {
+    background-color: #222;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.featured {
+    border: 2px solid #f7b500;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+.navbar {
+    background: transparent;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.leftside-navbar{
+    margin-left: 103px;
+}
+.logo {
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+}
+.nav-items1 {
+    display: flex;
+    gap: 32px;
+    margin-right: 129px;
+}
+.nav-items2{
+    color:black;
+    text-decoration: none;
+    border: 1px solid white;
+    background-color: #bbec08;
+    border-radius: 8px;
+    padding: 7px;
+    width: Hug (151px)px;
+height: Hug (46px)px;
+padding: 12px 32px 12px 32px;
+gap: 8px;
+border-radius: 10px;
+opacity: 0px;
+font-family: Poppins;
+font-size: 15px;
+font-weight: 700;
+line-height: 22px;
+text-align: left;
+
+
+}
+.nav-item3 {
+    color: white;
+    text-decoration: none;
+    margin-top: 12px;
+}
+.nav-item3.active {
+    color: #ffd700;
+}
+.nav-item3:hover{
+    color: yellow;
+}
+.city-container {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.selectcity {
+    display: inline;
+    flex-direction: row;
+    margin-left: 200px;
+    margin-top: -51px;
+}
+
+.select-city {
+    width: 110px;
+    height: 40px;
+    padding: 5px;
+    font-size: 16px;
+    color: #bbec08;
+    border: none;
+    background: transparent;
+    
+    cursor: pointer;
+}
+.selectcity span{
+    color:#FFFFFF40;
+}
+
+.select-city:disabled {
+    background-color: #f1545440;
+    color: #999;
+    cursor: not-allowed;
+}
+
+/*pizza heading start here*/
+.pizzaimage-heading{
+    justify-content: center;
+    width: Fill (1,200px)px;
+height: Hug (80px)px;
+gap: 48px;
+opacity: 0px;
+
+}
+.pizzaimage-heading img{
+    align-items: center;
+    margin-left: 800px;
+    justify-content: center;
+    margin-top: 100px;
+    
+}
+.heading-pizza{
+    margin-left: 900px;
+    margin-top: -82px;
+    
+font-family: Poppins;
+font-size: 64px;
+font-weight: 700;
+line-height: 80px;
+text-align: left;
+
+}

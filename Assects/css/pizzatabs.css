@@ -1,0 +1,424 @@
+.tabsofpizza{
+    align-items: center;
+    margin-left: 400px;
+    justify-content: space-between;
+    width: 100%;
+    padding-left: 33px;
+    margin-top: 73px;
+    
+}
+.nav-tabs{
+    color: #000;
+
+}
+.nav-link{
+    color: #000;
+    
+}
+/* Container for pizza tabs */
+.tabsofpizza {
+    font-family: Arial, sans-serif;
+    margin: 20px 20px;
+    max-width: 100%;
+   
+   margin-top: 120px;
+  }
+  
+  /* Navigation bar styling */
+  .tabsofpizza .nav-tabs {
+    display: flex;
+    justify-content: space-around;
+    margin-left: 250px;
+    margin-right: 390px;
+    padding: 10px 0;
+  }
+  
+  .tabsofpizza .nav-link {
+    background:transparent;
+    border: 1px solid #dee2e6;
+    padding: 10px 20px;
+    color: #495057;
+    cursor: pointer;
+
+  }
+  
+  .tabsofpizza .nav-link:hover {
+    background-color: #a9ee07;
+    color: #007bff;
+  }
+  
+  .tabsofpizza .nav-link.active {
+    background-color: #fff;
+    border-bottom: 2px solid #007bff;
+    color: #007bff;
+    font-weight: bold;
+  }
+  
+  /* Content of tabs */
+  .tabsofpizza .tab-content {
+    
+    border-top: none;
+    padding: 20px;
+    
+    width: 80%;
+    margin-top: 12px;
+    
+    margin-left: 130px;
+  }
+  .firsttab-data{
+    width: 100%;
+    background-color: #007bff
+  }
+  
+  .tabsofpizza .tab-pane {
+    display: none;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  
+  .tabsofpizza .tab-pane.show {
+    display: block;
+    opacity: 1;
+  }
+  .tab-content{
+    width: 100%;
+  }
+
+
+
+
+
+
+
+ 
+.containerr {
+    display: grid;
+    
+    gap: 80px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+.item11 {
+    background-color: #2D2D2D;
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    width: 700px;
+}
+.image-placeholder1 {
+    background-color: #3D3D3D;
+    width: 60%;
+    padding-top: 75%; /* 4:3 Aspect Ratio */
+    margin-bottom: 15px;
+    height: 30%;
+    margin-left: 120px;
+    border-radius: 12px;
+}
+.heading11{
+    margin: 0 0 10px 0;
+    font-size: 1.2em;
+    margin-left: 222px;
+
+}
+.new-recipe11 {
+    background-color: #FFD700;
+    color: #000000;
+    font-size: 0.7em;
+    margin-left: 222px;
+    padding: 4px 12px;
+    width: 112px;
+    border-radius: 5px;
+    display: inline-block;
+    margin-bottom: 5px;
+}
+.description11 {
+    font-size: 0.8em;
+    color: #AAAAAA;
+    margin-bottom: 15px;
+    margin-left: 160px;
+}
+.price-size11 {
+    display: flex;
+    flex-direction: column;
+    font-size: 0.9em;
+    gap: 5px;
+    
+}
+.price-size-row11 {
+    display: flex;
+    justify-content: space-between;
+    padding: 4px;
+    border: 1px solid white;
+}
+.price11 {
+    font-weight: bold;
+}
+.size11 {
+    color: #AAAAAA;
+}
+
+/*cards no 12 start here */
+
+
+.item12 {
+
+    border-radius: 10px;
+    
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    margin-left: 960px;
+    margin-top: -775px;
+}
+.image-placeholder12 {
+    background-color: #3D3D3D;
+    width: 100%;
+    padding-top: 75%; /* 4:3 Aspect Ratio */
+    margin-bottom: 15px;
+    height: 20%;
+
+    border-radius: 12px;
+}
+.new-recipe12 {
+    background-color: #FFD700;
+    color: #000000;
+    font-size: 0.7em;
+    margin-left: 72px;
+    padding: 4px 12px;
+    width: 112px;
+    border-radius: 5px;
+    display: inline-block;
+    margin-bottom: 5px;
+}
+.heading12{
+    margin: 0 0 10px 0;
+    font-size: 1.2em;
+    margin-left: 50px;
+
+}
+
+.description12 {
+    font-size: 0.8em;
+    color: #AAAAAA;
+    margin-bottom: 15px;
+    margin-left: 20px;
+}
+.price-size12 {
+    display: flex;
+    flex-direction: column;
+    font-size: 0.9em;
+    gap: 5px;
+    
+}
+.price-size-row12 {
+    display: flex;
+    justify-content: space-between;
+    padding: 4px;
+    border: 1px solid white;
+}
+.price12 {
+    font-weight: bold;
+}
+.size12 {
+    color: #AAAAAA;
+}
+
+/*cards no 13 start here */
+
+
+.item13 {
+
+    border-radius: 10px;
+    
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    margin-top: -240px;
+    margin-left: 960px;
+}
+.image-placeholder13 {
+    background-color: #3D3D3D;
+    width: 100%;
+    padding-top: 75%; /* 4:3 Aspect Ratio */
+    margin-bottom: 15px;
+    height: 20%;
+
+    border-radius: 12px;
+}
+.new-recipe13 {
+    background-color: #FFD700;
+    color: #000000;
+    font-size: 0.7em;
+    margin-left: 72px;
+    padding: 4px 12px;
+    width: 112px;
+    border-radius: 5px;
+    display: inline-block;
+    margin-bottom: 5px;
+}
+.heading13{
+    margin: 0 0 10px 0;
+    font-size: 1.2em;
+    margin-left: 50px;
+
+}
+
+.description13 {
+    font-size: 0.8em;
+    color: #AAAAAA;
+    margin-bottom: 15px;
+    margin-left: 20px;
+}
+.price-size13 {
+    display: flex;
+    flex-direction: column;
+    font-size: 0.9em;
+    gap: 5px;
+    
+}
+.price-size-row13 {
+    display: flex;
+    justify-content: space-between;
+    padding: 4px;
+    border: 1px solid white;
+}
+.price13 {
+    font-weight: bold;
+}
+.size13 {
+    color: #AAAAAA;
+}
+
+
+/*cards no 14 start here */
+
+
+.item14 {
+
+    border-radius: 10px;
+    
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    margin-top: -140px;
+    margin-left: 10px;
+}
+.image-placeholder14 {
+    background-color: #3D3D3D;
+    width: 100%;
+    padding-top: 75%; /* 4:3 Aspect Ratio */
+    margin-bottom: 15px;
+    height: 20%;
+
+    border-radius: 12px;
+}
+.new-recipe14 {
+    background-color: #FFD700;
+    color: #000000;
+    font-size: 0.7em;
+    margin-left: 72px;
+    padding: 4px 12px;
+    width: 112px;
+    border-radius: 5px;
+    display: inline-block;
+    margin-bottom: 5px;
+}
+.heading14{
+    margin: 0 0 10px 0;
+    font-size: 1.2em;
+    margin-left: 50px;
+
+}
+
+.description14 {
+    font-size: 0.8em;
+    color: #AAAAAA;
+    margin-bottom: 15px;
+    margin-left: 20px;
+}
+.price-size14 {
+    display: flex;
+    flex-direction: column;
+    font-size: 0.9em;
+    gap: 5px;
+    
+}
+.price-size-row14 {
+    display: flex;
+    justify-content: space-between;
+    padding: 4px;
+    border: 1px solid white;
+}
+.price14 {
+    font-weight: bold;
+}
+.size14 {
+    color: #AAAAAA;
+}
+
+/*cards no 15 start here */
+
+
+.item15 {
+
+    border-radius: 10px;
+    
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    margin-top: -506px;
+    margin-left: 410px;
+}
+.image-placeholder15 {
+    background-color: #3D3D3D;
+    width: 100%;
+    padding-top: 75%; /* 4:3 Aspect Ratio */
+    margin-bottom: 15px;
+    height: 20%;
+
+    border-radius: 12px;
+}
+.new-recipe15 {
+    background-color: #FFD700;
+    color: #000000;
+    font-size: 0.7em;
+    margin-left: 72px;
+    padding: 4px 12px;
+    width: 112px;
+    border-radius: 5px;
+    display: inline-block;
+    margin-bottom: 5px;
+}
+.heading15{
+    margin: 0 0 10px 0;
+    font-size: 1.2em;
+    margin-left: 70px;
+
+}
+
+.description15 {
+    font-size: 0.8em;
+    color: #AAAAAA;
+    margin-bottom: 15px;
+    margin-left: 20px;
+}
+.price-size15 {
+    display: flex;
+    flex-direction: column;
+    font-size: 0.9em;
+    gap: 5px;
+    
+}
+.price-size-row15 {
+    display: flex;
+    justify-content: space-between;
+    padding: 4px;
+    border: 1px solid white;
+}
+.price15 {
+    font-weight: bold;
+}
+.size15 {
+    color: #AAAAAA;
+}

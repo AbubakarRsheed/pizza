@@ -1,0 +1,302 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: black;
+}
+
+/* Navbar Styles */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    padding: 10px 20px;
+    color: white;
+}
+
+.logo-select {
+    display: flex;
+    align-items: center;
+}
+
+.logo-select img {
+    width: 120px;
+    height: 40px;
+    margin-right: 15px;
+}
+
+.form-select {
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+    border-radius: 4px;
+    padding: 5px;
+}
+
+.form-select option {
+    color: black;
+}
+.nav-tabs .nav-link {
+    margin-bottom: -1px;
+    background: 0 0;
+    margin: 13px;
+    border: 1px solid transparent;
+    border-top-left-radius: .25rem;
+    border-top-right-radius: .25rem;
+    color:white;
+}
+.nav-pills .nav-link {
+    background: 0 0;
+    border: 0;
+    border-radius: .25rem;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    margin-left: 40px;
+}
+/* Navbar Links */
+.nav-links {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    margin-left: auto;  /* This will push the nav-links to the right side */
+    padding-right: 20px;
+}
+
+.nav-links li {
+    margin: 0 2px;
+    position: relative;
+}
+
+.nav-links li a {
+    color:white;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 10px 15px;
+    display: block;
+    transition: color 0.3s ease-in-out;
+}
+
+/* Active Link Styling */
+.nav-links li.active a {
+    color: yellow;
+    border-bottom: 2px solid yellow;
+}
+
+/* Hover Effect */
+.nav-links li a:hover {
+    color: yellow;
+    border-bottom: 2px solid yellow;
+}
+
+/* Separator Line Styling */
+.nav-links img {
+    height: 40px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+/* Hamburger Menu */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.hamburger .bar {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 4px 0;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(3, 3, 3);
+    flex-wrap: wrap;
+}
+
+.col-lg-4 {
+    flex: 1;
+    max-width: 33.33%;
+    align-items: left;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+h6 {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+    margin-top: 30px;
+    color: red;
+    font-weight: bold;
+}
+
+p {
+    font-size: 0.9rem;
+    margin: 5px 0;
+    color: #333;
+}
+
+.helping-section {
+    display: flex;
+    flex-direction: column;
+}
+
+.helping-section p {
+    display: flex;
+    align-items: center;
+}
+
+.helping-section i {
+    margin-right: 8px;
+    color: black;
+    font-size: 1.2rem;
+}
+
+.highlight {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+/* Responsive Styles */
+
+/* 4K (2560px and above) */
+@media (min-width: 2560px) {
+    .nav-links li a {
+        font-size: 20px;
+    }
+}
+
+/* Large Screens (1440px and above) */
+@media (max-width: 2560px) and (min-width: 1440px) {
+    .nav-links li a {
+        font-size: 18px;
+        
+    }
+}
+
+/* Medium Screens (1024px and above) */
+@media (max-width: 1440px) and (min-width: 1024px) {
+    .nav-links li a {
+        font-size: 16px;
+    }
+
+    .logo-select img {
+        width: 100px;
+        height: 35px;
+    }
+
+    .btn, .btn2 {
+        width: 250px;
+        height: 50px;
+        font-size: 16px;
+        padding: 12px 40px;
+    }
+}
+
+/* Tablets (768px and below) */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        background-color: #333;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .nav-links li {
+        margin: 10px 0;
+        text-align: center; /* Center align links when displayed as a dropdown */
+    }
+
+    .hamburger {
+        display: flex;
+    }
+}
+
+/* Mobile Screens (576px and below) */
+@media (max-width: 576px) {
+    .nav-links li a {
+        font-size: 14px;
+        padding: 8px 10px;
+    }
+
+    .logo-select img {
+        width: 80px;
+        height: 30px;
+    }
+}
+
+/* Small Mobile Screens (425px and below) */
+@media (max-width: 425px) {
+    .nav-links li a {
+        font-size: 12px;
+        padding: 6px 8px;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .social-links {
+        flex-direction: column;
+    }
+
+    .social-links li {
+        margin-left: 0;
+        margin-top: 5px;
+    }
+}
+
+/* Extra Small Mobile Screens (375px and below) */
+@media (max-width: 375px) {
+    .nav-links li a {
+        font-size: 10px;
+        padding: 5px 6px;
+    }
+
+    .logo-select img {
+        width: 70px;
+        height: 25px;
+    }
+}
+
+/* Ensure tabs are aligned to the left on all screen sizes */
+.tabs-container {
+    display: flex;
+    flex-direction: row; /* Horizontal layout for tabs */
+    justify-content: flex-start; /* Align tabs to the left */
+    padding: 10px 20px; /* Add padding for spacing */
+}
+
+.tab {
+    margin-right: 20px; /* Space between tabs */
+    padding: 10px; /* Padding for tab clickable area */
+    cursor: pointer; /* Change cursor to pointer on hover */
+    color: white; /* Tab text color */
+    background-color: transparent; /* Tab background */
+    border: none; /* Remove default border */
+    transition: background-color 0.3s ease; /* Smooth transition for hover */
+}
+
+.tab:hover {
+    background-color: rgba(255, 255, 255, 0.1); /* Hover effect for tabs */
+}

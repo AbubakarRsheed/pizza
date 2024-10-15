@@ -1,0 +1,84 @@
+.blogheading h3{
+    color: white;
+    font-size: 55px;
+    text-align: center;
+    margin-top: 22px;
+}
+
+
+.ourblogheading {
+    margin: 0;
+    color: rgb(252, 248, 248);
+    font-size: larger;
+    margin-top: 50px;
+    align-items: center;
+    text-align: center;
+    font-size: 22px;
+}
+.ourblognav {
+    
+    padding: 10px 0;
+    text-align: center;
+    margin-top: 30px;
+    justify-content: space-between;
+}
+.ourblognav a {
+    color: #fcf9f9;
+    text-decoration: none;
+    justify-content: space-between;
+    margin: 0 10px;
+}
+.blog-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding: 20px;
+    margin-left: 200px;
+    margin-right: 200px;
+}
+.Published{
+    color: burlywood;
+    width: Hug (149px)px;
+height: Hug (22px)px;
+gap: 8px;
+opacity: 0px;
+justify-content: left;
+}
+.estimatetime{
+    width: Hug (130px)px;
+height: Hug (22px)px;
+gap: 8px;
+opacity: 0px;
+color: #faf7f7;
+
+}
+.blog-post {
+
+    padding: 20px;
+    border-radius: 5px;
+}
+.blog-post img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 5px;
+    background-color: #333;
+    
+}
+.post-info {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    font-size: 0.8em;
+    color: #999;
+    justify-content: space-between;
+}
+.post-info img {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    margin-right: -135px;
+}
+.ourteamimage{
+    margin-left: 33px;
+}

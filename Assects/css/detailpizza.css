@@ -1,0 +1,339 @@
+.containere {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+    padding-left: 120px;
+    padding-right: 130px;
+
+}
+
+.product {
+    display: flex;
+    border-radius: 8px;
+    overflow: hidden;
+    gap: 55px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.product-image img{
+    width: 600px;
+    height: 500px;
+    margin-top: 22px;
+    border-radius: 5px;
+}
+
+
+.product-details {
+    flex: 1;
+    padding: 20px;
+}
+
+.new-recipe {
+    background-color: #fad013;
+    color: black;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 14px;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+.orderheadinds {
+    color:white;
+
+    font-family: Poppins;
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 80px;
+    text-align: left;
+
+}
+
+.detailpara {
+    color: white;
+
+    font-family: Open Sans;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 32px;
+    text-align: left;
+    width: 420px;
+
+}
+
+.Experimental {
+    color: #faf7f7;
+
+    font-family: Poppins;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 28px;
+    text-align: left;
+
+}
+
+.ingredients {
+    margin-top: 20px;
+}
+
+.ingredient {
+    display: flex;
+    border: 1px rgb(224, 223, 223) solid;
+    align-items: center;
+    margin-bottom: 10px;
+   
+    padding: 12px 24px 12px 24px;
+    gap: 0px;
+    border-radius: 10px;
+    border: 1px 0px 0px 0px;
+    justify-content: space-between;
+    opacity: 0px;
+    margin-top: 22px;
+
+}
+
+.ingredient-name {
+    font-weight: bold;
+    color: #fffdfd;
+}
+
+.ingredient-price {
+    color: #ff4500;
+    margin-left: -490px;
+}
+
+.toggle {
+    width: 50px;
+    height: 24px;
+    background-color: #ccc;
+    border-radius: 12px;
+    position: relative;
+    cursor: pointer;
+}
+
+.toggle.active {
+    background-color: #ff4500;
+}
+
+.toggle-button {
+    width: 20px;
+    height: 20px;
+    background-color: white;
+    border-radius: 50%;
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    transition: 0.3s;
+}
+
+.toggle.active .toggle-button {
+    left: 28px;
+}
+
+.order-bar {
+
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border-radius: 8px;
+    background-color: #f3f2f2;
+    width: 100%;
+    color: rgb(2, 2, 2);
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 22px;
+}
+
+.order-details {
+    display: flex;
+    align-items: center;
+    color: #000;
+    font-size: large;
+}
+
+.quantity {
+    display: flex;
+    align-items: center;
+    margin-left: 1020px;
+    color: #000;
+}
+
+.quantity button {
+    background-color: rgb(211, 16, 16);
+    border: none;
+    color: #050505;
+    font-size: 18px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.quantity span {
+    margin: 0 10px; 
+    color: black;
+    
+}
+
+.order-button {
+    background-color: #ffd700;
+    color: black;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+
+.maingriddetils{
+    
+    width: 100%;
+}
+.container-grid{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 340px;
+    color: white;
+    padding-right: 330px;
+}
+.taste{
+    color: #FFFFFF;
+    
+font-family: Poppins;
+font-size: 32px;
+font-weight: 700;
+line-height: 48px;
+text-align: left;
+
+}
+.paraoogrid{
+    
+color: rgb(248, 248, 250);
+margin-top: 10px;
+font-size: 14px;
+font-weight: 700;
+line-height: 18px;
+text-align: left;
+
+}
+.thispizza{
+    color: red;
+}
+
+
+
+/*cards inthe six cards start her */
+/* Basic reset */
+
+.pizzadetailcards-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 1px;
+    margin-bottom: 20px;
+    margin-left: 150px;
+    margin-top: 30px;
+    margin-right: 200px;
+}
+
+.pizzadetailcards-item {
+    width: 30%; /* For three cards in one row */
+    
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.pizzadetailcards-image-placeholder {
+    width: 100%;
+    height: 150px;
+    background-color: #f0f0f0;
+    margin-bottom: 15px;
+    border-radius: 8px;
+}
+
+.pizzadetailcards-new-recipe {
+    background-color: #ff6347;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.pizzadetailcards-new-recipe:hover {
+    background-color: #e5533c;
+}
+.pizzacard-imageone img{
+width: 400px;
+border-radius: 6px;
+margin-bottom: 12px;
+}
+
+.pizzadetailcards-heading {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.pizzadetailcards-description {
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.pizzadetailcards-price-size {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.pizzadetailcards-price-size-row {
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid white;
+    padding: 12px;
+    border-radius: 4px;
+}
+
+.pizzadetailcards-price {
+    font-weight: bold;
+}
+
+.pizzadetailcards-size {
+    font-style: italic;
+}
+
+
+/*you konw might start here */
+.main-content {
+    text-align: center;
+    padding: 50px 0;
+}
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+.subtitle {
+    color: #888;
+    margin-bottom: 30px;
+}
+.food-icons {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.food-icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+    cursor: pointer;
+}
+.food-icon img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 5px;
+}
